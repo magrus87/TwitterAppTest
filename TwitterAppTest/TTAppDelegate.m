@@ -8,24 +8,29 @@
 
 #import "TTAppDelegate.h"
 
+#define kMainStoryboardName         @"Main"
+
 @implementation TTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSForegroundColorAttributeName: [UIColor customBlueColor],
+                                                           }];
+
     return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    [[TTManagerData shared] removeObserver:self.window.rootViewController forKeyPath:@"accountTwits"];
+    [[TTManagerData shared] removeObserver:self.window.rootViewController forKeyPath:@"searchTwits"];
+    [[TTManagerData shared] removeObserver:self.window.rootViewController forKeyPath:@"searchUsers"];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[TTManagerData shared] saveTwitsList];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -35,7 +40,12 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [[TTManagerData shared] addObserver:self.window.rootViewController forKeyPath:@"accountTwits" options:NSKeyValueObservingOptionNew context:nil];
+    [[TTManagerData shared] addObserver:self.window.rootViewController forKeyPath:@"searchTwits" options:NSKeyValueObservingOptionNew context:nil];
+    [[TTManagerData shared] addObserver:self.window.rootViewController forKeyPath:@"searchUsers" options:NSKeyValueObservingOptionNew context:nil];
+    [[TTManagerData shared] restoreTwitsList];
+
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

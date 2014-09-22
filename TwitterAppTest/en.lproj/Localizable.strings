@@ -1,0 +1,15 @@
+/* 
+  Localizible.strings
+  TwitterAppTest
+
+  Created by Александр Макаров on 17.09.14.
+  Copyright (c) 2014 Александр Макаров. All rights reserved.
+*/
+
+
+"network_fail"          =   "Network fail";
+"network_fail_message"  =   "Unavailable internet connection";
+
+
+
+"close"                 =   "Close";

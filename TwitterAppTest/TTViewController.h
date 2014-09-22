@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TTSideMenuViewController.h"
 
-@interface TTViewController : UIViewController
+@interface TTViewController : TTSideMenuViewController
 
 @end

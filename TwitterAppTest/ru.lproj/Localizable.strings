@@ -1,0 +1,19 @@
+/* 
+  Localizible.strings
+  TwitterAppTest
+
+  Created by Александр Макаров on 17.09.14.
+  Copyright (c) 2014 Александр Макаров. All rights reserved.
+*/
+
+
+"network_fail"          =   "Ошибка соединения";
+"network_fail_message"  =   "Нет доступного интернет соединения";
+
+
+"info"                  =   "Информация";
+"no_twits"              =   "Пользователь в последнее время был не активен";
+"no_users"              =   "Не найдено ни одного пользователя";
+
+
+"close"                 =   "Закрыть";
