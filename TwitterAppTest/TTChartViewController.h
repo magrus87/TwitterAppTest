@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <NChart3D/NChart3D.h>
 #import "TTSectionViewController.h"
 #import "TTChartView.h"
 
-@interface TTChartViewController : TTSectionViewController<NChartSeriesDataSource, TTChartDataSourceDelegate>
+@interface TTChartViewController : TTSectionViewController<TTChartDataSourceDelegate>
 
 @property (strong, nonatomic) NSArray *twitList;
 
