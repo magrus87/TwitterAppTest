@@ -16,7 +16,15 @@ NSDate * convertDateFromString(NSString *dateString, NSString *format, int local
 
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:format];
-    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:[[NSLocale preferredLanguages] objectAtIndex:locale]]];
+    
+    NSString *localeIdentifier = nil;
+    if (locale < [NSLocale preferredLanguages].count) {
+        localeIdentifier = [[NSLocale preferredLanguages] objectAtIndex:locale];
+    }
+    else if ([NSLocale preferredLanguages].count > 0) {
+        localeIdentifier = [NSLocale preferredLanguages].lastObject;
+    }
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:localeIdentifier]];
 
     NSDate *date = [dateFormatter dateFromString:dateString];
     return date;
