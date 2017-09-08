@@ -1,0 +1,4 @@
+Pods/*
+.DS_Store
+TwitterAppTest.xcworkspace/xcuserdata/
+TwitterAppTest.xcproject/xcuserdata/
