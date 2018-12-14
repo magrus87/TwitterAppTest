@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-TwitterClient.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TwitterClientTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TwitterClientUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftKeychainWrapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>39D2106C79E98A332742E92B5C4521CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C56774549C262EBC0FB80C17D2ED4BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC2DFD69C14FFAA067A66A5D18C1CCC7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C80CB1F41A1FDDAC2F2F37A237CFC5A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D258F646F33A6E6A65AAB6FCA8A86024</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

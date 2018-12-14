@@ -448,9 +448,13 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TT;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Александр Макаров";
 				TargetAttributes = {
+					5EB2A08919C93D9B00AC5AEB = {
+						DevelopmentTeam = 6A476FF2UC;
+					};
 					5EB2A0AA19C93D9B00AC5AEB = {
 						TestTargetID = 5EB2A08919C93D9B00AC5AEB;
 					};
@@ -702,6 +706,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 6A476FF2UC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -709,7 +714,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterAppTest/TwitterAppTest-Prefix.pch";
 				INFOPLIST_FILE = "TwitterAppTest/TwitterAppTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -721,6 +726,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 6A476FF2UC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -728,7 +734,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwitterAppTest/TwitterAppTest-Prefix.pch";
 				INFOPLIST_FILE = "TwitterAppTest/TwitterAppTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

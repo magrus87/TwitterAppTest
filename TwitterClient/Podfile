@@ -1,0 +1,19 @@
+platform :ios, '10.0'
+use_frameworks!
+
+def common_pods
+  pod 'SnapKit', '~> 3.2.0'
+  pod 'SwiftKeychainWrapper'
+end
+
+target 'TwitterClient' do
+  common_pods
+end
+
+target 'TwitterClientTests' do
+  common_pods
+end
+
+target 'TwitterClientUITests' do
+  common_pods
+end
